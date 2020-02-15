@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5045C3D2-E205-4DEC-8053-F7F84E01BB26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Szpital</RootNamespace>
+    <AssemblyName>Szpital</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="user.cs" />
+    <Compile Include="daneAdmina.cs" />
+    <Compile Include="Administrator_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator_D.Designer.cs">
+      <DependentUpon>Administrator_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lekarz_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lekarz_D.Designer.cs">
+      <DependentUpon>Lekarz_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pielegniarka_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pielegniarka_D.Designer.cs">
+      <DependentUpon>Pielegniarka_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logowanie.Designer.cs">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logUser.Designer.cs">
+      <DependentUpon>logUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lekarz.cs" />
+    <Compile Include="Pielegniarka.cs" />
+    <Compile Include="Pracownik.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="logAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logAdmin.Designer.cs">
+      <DependentUpon>logAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsunAdministratora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsunAdministratora.Designer.cs">
+      <DependentUpon>UsunAdministratora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsunLekarza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsunLekarza.Designer.cs">
+      <DependentUpon>UsunLekarza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsunPielegniarke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsunPielegniarke.Designer.cs">
+      <DependentUpon>UsunPielegniarke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wszyscy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wszyscy.Designer.cs">
+      <DependentUpon>Wszyscy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator_D.resx">
+      <DependentUpon>Administrator_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lekarz_D.resx">
+      <DependentUpon>Lekarz_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pielegniarka_D.resx">
+      <DependentUpon>Pielegniarka_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logowanie.resx">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logUser.resx">
+      <DependentUpon>logUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="logAdmin.resx">
+      <DependentUpon>logAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunAdministratora.resx">
+      <DependentUpon>UsunAdministratora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunLekarza.resx">
+      <DependentUpon>UsunLekarza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunPielegniarke.resx">
+      <DependentUpon>UsunPielegniarke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wszyscy.resx">
+      <DependentUpon>Wszyscy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
